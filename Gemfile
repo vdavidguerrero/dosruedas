@@ -33,7 +33,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -43,9 +43,3 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-touch README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/vdavidguerrero/dosruedas.git
-git push -u origin master

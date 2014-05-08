@@ -11,10 +11,10 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: ventacombustion_development
+  database: principalDataBase
   pool: 5
   username: root
-  password:
+  password: ksado132ipcopy45
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -26,7 +26,7 @@ test:
   database: ventacombustion_test
   pool: 5
   username: root
-  password:
+  password: ksado132ipcopy45
   socket: /tmp/mysql.sock
 
 production:
@@ -35,5 +35,5 @@ production:
   database: ventacombustion_production
   pool: 5
   username: root
-  password:
+  password: ksado132ipcopy45
   socket: /tmp/mysql.sock
