@@ -15,10 +15,13 @@
     {"id":1,"name":"Santo Doming","created_at":"2014-05-07T14:51:04.000Z","updated_at":"2014-05-07T14:51:04.000Z"}
     print s
     ```
-
+    ```javascript
+    var s = "JavaScript syntax highlighting";
+    alert(s);
+    ```
 -------------------------------------------------------------------------------------------------------------------------
 
-## Web page todo:
+## Web page to do:
 
 1. ~~Hacer el modelo y la migracion para las ciudades.~~
 2. ~~Hacer el modelo y la migracion para los usuairos.~~
