@@ -67,9 +67,8 @@
 3. ~~Hacer un metodo new que carge un formulario para crear un usuario.~~
 4. ~~Hacer que el metodo new segun el content type retorne un JSON con las ciudades.~~
 5. ~~Hacer un metodo create que reciba un hash para crear un un usuario, este hash puede ser através de un JSON o text.~~
-6. Hacer un metodo view que muestre un usuario por su id.
+6. ~~Hacer un metodo view que muestre un usuario por su id~~.
 7. Hacer que el metodo view retorne un JSON con la información de un usuario
-8. hacer que el motedo create retorne y lee un json
 
 
 
