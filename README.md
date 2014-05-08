@@ -34,6 +34,7 @@
             "updated_at":[string]"
         },
     ]
+    donde name y id hacen referencia a un ciudad distinta.
 
 ### /users/create
 
