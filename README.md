@@ -13,12 +13,12 @@ Un ejemplo de un elemento de la lista de ciudades sería:
 
 WorkFlow:
 
-<li>Hacer el modelo y la migracion para las ciudades</li>
-<li>hacer el modelo y la migracion para los usuairos.</li>
-<li>hacer un metodo new que carge un formulario para crear un usuario. </li>
-   <li> hacer un metodo create que reciba un formulario para crear un un usuario. </li>
-   <li> hacer un metodo view que muestre un usuario por su id. </li>
-   <li> hacer que el motedo create retorne y lee un json. </li>
+1.Hacer el modelo y la migracion para las ciudades.
+2.hacer el modelo y la migracion para los usuairos.
+3.hacer un metodo new que carge un formulario para crear un usuario
+    4.hacer un metodo create que reciba un formulario para crear un un usuario.
+    5.hacer un metodo view que muestre un usuario por su id.
+    6.hacer que el motedo create retorne y lee un json
 
 
 
