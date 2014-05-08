@@ -22,6 +22,23 @@
         {"id":8,"name":"Dajabon","created_at":"2014-05-07T14:51:48.000Z","updated_at":"2014-05-07T14:51:48.000Z"}
     ]
 
+### /users/create
+
+    recibe un JSON con la información de un usuario y crea el mismo en la base de datos.
+
+    el formato que se debe enviar a este metodo es definido de la siguiente manera
+
+    {
+        name: [String, requerido],
+        last_name: [String, requerido],
+        email: [String, unico, con formato -> j@g.com] ,
+        address: [String] ,
+        password: [String, requerido, minimo 6 caracteres],
+        cellphone: [String,requerido, 10 caracteres],
+        phone: [String, 10 caracteres],
+        city_id: [int, id valido obtenido de la lista del metodo /users/new]
+    }
+
 -------------------------------------------------------------------------------------------------------------------------
 
 ## Web page to do:
