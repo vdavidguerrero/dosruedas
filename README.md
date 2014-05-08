@@ -11,14 +11,11 @@
 
     Un ejemplo de un elemento de la lista de ciudades sería:
 
-    ```javascript
-    {"id":1,"name":"Santo Doming","created_at":"2014-05-07T14:51:04.000Z","updated_at":"2014-05-07T14:51:04.000Z"}
-    print s
-    ```
-    ```javascript
-    var s = "JavaScript syntax highlighting";
-    alert(s);
-    ```
+    {"id":1,
+    "name":"Santo Doming",
+    "created_at":"2014-05-07T14:51:04.000Z",
+    "updated_at":"2014-05-07T14:51:04.000Z"}
+
 -------------------------------------------------------------------------------------------------------------------------
 
 ## Web page to do:
