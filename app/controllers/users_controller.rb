@@ -16,7 +16,7 @@ class UsersController < ApplicationController
       if request.content_type =~ /json/
         render json: {response:1}
       else
-        redirect_to controller: "users", action: "new"
+        redirect_to controller: "users", action: "show"
       end
 
     else
@@ -28,6 +28,10 @@ class UsersController < ApplicationController
         render 'new'
       end
     end
+  end
+
+  def view
+
   end
 
 
