@@ -11,10 +11,16 @@
 
     Un ejemplo de un elemento de la lista de ciudades sería:
 
-    {"id":1,
-    "name":"Santo Doming",
-    "created_at":"2014-05-07T14:51:04.000Z",
-    "updated_at":"2014-05-07T14:51:04.000Z"}
+    [
+        {"id":1,"name":"Santo Doming","created_at":"2014-05-07T14:51:04.000Z","updated_at":"2014-05-07T14:51:04.000Z"},
+        {"id":2,"name":"Santiago","created_at":"2014-05-07T14:51:12.000Z","updated_at":"2014-05-07T14:51:12.000Z"},
+        {"id":3,"name":"Bani","created_at":"2014-05-07T14:51:16.000Z","updated_at":"2014-05-07T14:51:16.000Z"},
+        {"id":4,"name":"Puerto Plata","created_at":"2014-05-07T14:51:22.000Z","updated_at":"2014-05-07T14:51:22.000Z"},
+        {"id":5,"name":"Romana","created_at":"2014-05-07T14:51:27.000Z","updated_at":"2014-05-07T14:51:27.000Z"},
+        {"id":6,"name":"San Juan","created_at":"2014-05-07T14:51:31.000Z","updated_at":"2014-05-07T14:51:31.000Z"},
+        {"id":7,"name":"Barahona","created_at":"2014-05-07T14:51:39.000Z","updated_at":"2014-05-07T14:51:39.000Z"},
+        {"id":8,"name":"Dajabon","created_at":"2014-05-07T14:51:48.000Z","updated_at":"2014-05-07T14:51:48.000Z"}
+    ]
 
 -------------------------------------------------------------------------------------------------------------------------
 
