@@ -6,7 +6,10 @@
 
 ### /users/new
 
-     Retorna el listado de objetos JSON con las ciudades que deben ser desplegadas al momento de
+    @params:
+
+
+    @return: listado de objetos JSON con las ciudades que deben ser desplegadas al momento de
     crear un usuario nuevo.
 
     Un ejemplo de un elemento de la lista de ciudades sería:
@@ -24,7 +27,7 @@
 
 ### /users/create
 
-    recibe un JSON con la información de un usuario y crea el mismo en la base de datos.
+    @params: JSON con la información ya validad de un usuario y crea el mismo en la base de datos.
 
     el formato que se debe enviar a este metodo es definido de la siguiente manera
 
@@ -38,6 +41,17 @@
         phone: [String, 10 caracteres],
         city_id: [int, id valido obtenido de la lista del metodo /users/new]
     }
+
+    @return: response json
+
+    {response: [int]}
+
+    donde:
+
+    1 = usuario creado sactisfactoriamente
+    2 = error en formulario
+
+
 
 -------------------------------------------------------------------------------------------------------------------------
 
