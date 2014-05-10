@@ -97,7 +97,7 @@
     @return: String con el valor único del token
 
 ### /api/v1/users/update
-    @auth: NO
+    @auth: SI
 
     @params: JSON con la información ya validad de un usuario y crea el mismo en la base de datos.
 
