@@ -1,51 +1,96 @@
 class UsersController < ApplicationController
-  protect_from_forgery except: :create
 
-  # entrega las ciudades necesarias para crear un usuario.
+  before_action :confirm_logged_in, except: [:new, :create, :authenticate, :login, :index, :logout]
+
+  # Nuevo Usuairo...
+  # Despliega un formulario para crear un usuario nuevo
   def new
     @cities = City.all
-    respond_to do |format|
-      format.html
-      format.json{ render json: @cities.as_json(only:[:id, :name ]) }
-    end
+
   end
 
-  #crea un usuario nueva en la base de datos.
+  # Crea un usuario...
+  # Recibe los datos del usuario, la valida y crea
   def create
     @user = User.new(user_params)
-
     if @user.save
       session[:user_id] = @user.id
-      respond_to do |format|
-        format.html{ redirect_to controller: "users", action: "show"}
-        format.json{ render json: {response:1} }
-      end
+      redirect_to controller: "users", action: "show"
 
     else
       @cities = City.all
-      respond_to do |format|
-        format.html{ render 'new' }
-        format.json{ render json: {response:2} }
-      end
+      render 'new'
     end
   end
 
   # Entrega los datos del usuario logeado
+  # Muestra el usuario que esta en sesion al momento
   def show
     @user = User.find(session[:user_id])
-    respond_to do |format|
-      format.html
-      format.json { render json: @user.as_json(only: [:id, :name, :last_name, :email, :address, :password, :cellphone,:phone], include: [city: {only:[:id, :name ]}])}
+  end
+
+  # Carga el inicio de sesion
+  # Muestra el formulario para iniciar sesion
+  def login
+
+  end
+
+  # Autentifica el usuario en la base de datos
+  # Revisa el usaurio y la contraseña
+  def authenticate
+    if params[:email].present? && params[:email].present?
+      @user = User.find_by_email(params[:email])
+      if !@user.nil?
+        @user = @user.authenticate(params[:password])
+      end
+    end
+
+    if @user
+      session[:user_id] = @user.id
+      redirect_to controller: 'users', action: 'index'
+    else
+      flash[:message] = "Usuario/Contraseña Incorrecto"
+      render 'login'
     end
   end
 
+  #Saca de sesion
+  #toma al usuario actual y lo saca de sesion
+  def logout
+    session[:user_id] = nil
+    redirect_to controller: 'users', action: 'index'
+  end
 
+  #Saca de sesion
+  #toma al usuario actual y lo saca de sesion
+  def index
+
+  end
+
+  #Edicion de usuario
+  #Carga la vista para editar un suario
+  def edit
+    @cities = City.all
+    @user = User.find(session[:user_id])
+  end
+
+  #edita un usuario
+  #recibe los datos de un usuario y los validas.
+  def update
+    @cities = City.all
+    @user = User.find_by_id(params[:id])
+    if @user.update_attributes(user_params)
+      redirect_to controller: "users", action: "show"
+    else
+      render 'edit'
+    end
+  end
 
   private
 
-  def user_params
-    params.require(:user).permit(:name, :last_name, :email, :address, :password, :cellphone, :city_id, :phone, :password_confirmation)
-  end
+    def user_params
+      params.require(:user).permit(:name, :last_name, :email, :address, :password, :password_confirmation, :cellphone, :city_id, :phone)
+    end
 
 end
 

@@ -2,6 +2,9 @@ class User < ActiveRecord::Base
   belongs_to :city
   has_secure_password
 
+  before_create :set_auth_token
+
+
   EMAIL_REGEX = /\A[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}\Z/i
 
   validates :name      , presence: true
@@ -11,9 +14,7 @@ class User < ActiveRecord::Base
                          format: {with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create}
 
 
-  validates :password  , length: {minimum: 6}
 
-  validates :password_confirmation  , length: {minimum: 6}
 
   validates :cellphone , presence: true,
                          numericality: true,
@@ -23,7 +24,13 @@ class User < ActiveRecord::Base
                          length: {is: 10}
 
 
+  private
+  def set_auth_token
+    return if auth_token.present?
 
-
+    begin
+      self.auth_token = SecureRandom.hex
+    end while self.class.exists?(auth_token: self.auth_token)
+  end
 end
 

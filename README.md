@@ -2,9 +2,13 @@
 
 ## Métodos del webservice
 
-    Los metodos son accedidos via un request POST, con un contet-type JSON.
+    Los metodos son accedidos via un request GET, con un contet-type JSON.
 
-### /users/new.json
+    los metodos marcarcados con @auth: SI, necesitan que se enviado el Token único del usuario antes
+    de hacer el requeremiento. Para obtener este token se necesita hace un GET al metodo /api/v1/login.
+
+### /api/v1/users/cities
+    @auth: NO
 
     @params:
 
@@ -31,7 +35,8 @@
 
     donde name y id hacen referencia a un ciudad distinta.
 
-### /users/create.json
+### /api/v1/users/create
+    @auth: NO
 
     @params: JSON con la información ya validad de un usuario y crea el mismo en la base de datos.
 
@@ -49,26 +54,79 @@
         city_id: [int, id valido obtenido de la lista del metodo /users/new]
     }
 
-    @return: response json
+    @return: String con el valor único del token
 
-    {response: [int]}
+### /api/v1/users/get
+    @auth: SI
 
-    donde:
+    @params: JSON con el id del usuario.
 
-    1 = usuario creado sactisfactoriamente
-    2 = error en formulario
+    el formato que se debe enviar a este metodo es definido de la siguiente manera
 
+    {
+        id: int,
+    }
 
+    @return: Json con los datos del usuario en el siguiente formato
 
-## Web page to do:
+    {
+        name: [String, requerido],
+        last_name: [String, requerido],
+        email: [String, unico, con formato -> j@g.com] ,
+        address: [String] ,
+        password: [String, requerido, minimo 6 caracteres],
+        password_confirmation: [String, requerido, minimo 6 caracteres],
+        cellphone: [String,requerido, 10 caracteres],
+        phone: [String, 10 caracteres],
+        city: [Json,{"name":[string], "id":[int]}]
+        id: [int]
+    }
 
-1. ~~Hacer el modelo y la migracion para las ciudades.~~
-2. ~~Hacer el modelo y la migracion para los usuaros.~~
-3. ~~Hacer un metodo new que carge un formulario para crear un usuario.~~
-4. ~~Hacer que el metodo new segun el content type retorne un JSON con las ciudades.~~
-5. ~~Hacer un metodo create que reciba un hash para crear un un usuario, este hash puede ser através de un JSON o text.~~
-6. ~~Hacer un metodo view que muestre un usuario por su id~~.
-7. Hacer que el metodo view retorne un JSON con la información de un usuario
+### /api/v1/users/login
+     @auth: NO
 
+     @params: JSON con el con el usuario y la contraseñe.
 
+    el formato que se debe enviar a este metodo es definido de la siguiente manera
+
+    {
+        email: [String],
+        password: [String]
+    }
+
+    @return: String con el valor único del token
+
+### /api/v1/users/update
+    @auth: NO
+
+    @params: JSON con la información ya validad de un usuario y crea el mismo en la base de datos.
+
+    el formato que se debe enviar a este metodo es definido de la siguiente manera
+
+    {
+        name: [String, requerido],
+        last_name: [String, requerido],
+        email: [String, unico, con formato -> j@g.com] ,
+        address: [String] ,
+        password: [String, requerido, minimo 6 caracteres],
+        password_confirmation: [String, requerido, minimo 6 caracteres],
+        cellphone: [String,requerido, 10 caracteres],
+        phone: [String, 10 caracteres],
+        city_id: [int, id valido obtenido de la lista del metodo /users/new]
+    }
+
+    @return: Json con los datos del usuario en el siguiente formato
+
+     {
+        name: [String, requerido],
+        last_name: [String, requerido],
+        email: [String, unico, con formato -> j@g.com] ,
+        address: [String] ,
+        password: [String, requerido, minimo 6 caracteres],
+        password_confirmation: [String, requerido, minimo 6 caracteres],
+        cellphone: [String,requerido, 10 caracteres],
+        phone: [String, 10 caracteres],
+        city: [Json,{"name":[string], "id":[int]}]
+        id: [int]
+     }
 

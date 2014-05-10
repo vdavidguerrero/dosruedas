@@ -7,8 +7,32 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="navbar navbar-inverse navbar-fixed-top " role="navigation" >
 
+  <div class="navbar-header ">
+    <%= link_to 'Problemas' , {controller: 'users', action: 'index'}, class:'navbar-brand' %></div>
+
+
+  <ul class='nav navbar-nav navbar-right'>
+    <% if session[:user_id].nil?  %>
+        <li><%= link_to 'Login'              , {controller: 'users', action: 'login'}, class:'navbar-brand' %></li>
+        <li><%= link_to 'Crear Cuenta'       , {controller: 'users', action: 'new'}, class:'navbar-brand' %></li>
+    <% else %>
+        <li><%= link_to 'Salir De sesion'    , {controller: 'users', action: 'logout'}, class:'navbar-brand' %></li>
+        <li><%= link_to 'Mostrar Usuario'    , {controller: 'users', action: 'show'}, class:'navbar-brand' %></li>
+        <li><%= link_to 'Editar'             , {controller: 'users', action: 'edit'}, class:'navbar-brand' %></li>
+    <% end %>
+
+    <li> -</li>
+  </ul>
+</div>
+</div>
+<div class="container" style="padding-top:35px;">
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 <%= yield %>
-
+</div>
 </body>
 </html>
+
+
