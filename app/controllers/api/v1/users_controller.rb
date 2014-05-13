@@ -1,8 +1,6 @@
 class API::V1::UsersController < ApplicationController
   respond_to :json
-
   before_action :authenticate, except: [:cities, :login, :create]
-  skip_before_filter  :verify_authenticity_token
 
   # return a JSON with all the dominican republic cities
   def cities

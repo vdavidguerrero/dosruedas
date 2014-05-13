@@ -11,7 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140510003753) do
+ActiveRecord::Schema.define(version: 20140510220508) do
+
+  create_table "ads", force: true do |t|
+    t.integer  "price"
+    t.integer  "year"
+    t.integer  "visit_count"
+    t.integer  "gears"
+    t.integer  "engine_size"
+    t.integer  "cylinders"
+    t.integer  "strokes"
+    t.string   "paper_status"
+    t.string   "color"
+    t.string   "transmission_type"
+    t.string   "description"
+    t.integer  "vehicle_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "title"
+  end
+
+  add_index "ads", ["user_id"], name: "index_ads_on_user_id", using: :btree
+  add_index "ads", ["vehicle_id"], name: "index_ads_on_vehicle_id", using: :btree
+
+  create_table "brands", force: true do |t|
+    t.string "name", null: false
+  end
+
+  add_index "brands", ["name"], name: "index_brands_on_name", using: :btree
 
   create_table "cities", force: true do |t|
     t.string   "name",       null: false
@@ -21,62 +49,27 @@ ActiveRecord::Schema.define(version: 20140510003753) do
 
   add_index "cities", ["name"], name: "index_cities_on_name", using: :btree
 
-  create_table "oauth_access_grants", force: true do |t|
-    t.integer  "resource_owner_id", null: false
-    t.integer  "application_id",    null: false
-    t.string   "token",             null: false
-    t.integer  "expires_in",        null: false
-    t.text     "redirect_uri",      null: false
-    t.datetime "created_at",        null: false
-    t.datetime "revoked_at"
-    t.string   "scopes"
+  create_table "models", force: true do |t|
+    t.string  "name",     null: false
+    t.integer "brand_id"
   end
 
-  add_index "oauth_access_grants", ["token"], name: "index_oauth_access_grants_on_token", unique: true, using: :btree
+  add_index "models", ["name"], name: "index_models_on_name", using: :btree
 
-  create_table "oauth_access_tokens", force: true do |t|
-    t.integer  "resource_owner_id"
-    t.integer  "application_id"
-    t.string   "token",             null: false
-    t.string   "refresh_token"
-    t.integer  "expires_in"
-    t.datetime "revoked_at"
-    t.datetime "created_at",        null: false
-    t.string   "scopes"
+  create_table "styles", force: true do |t|
+    t.string  "name",        null: false
+    t.string  "photo_path",  null: false
+    t.string  "description", null: false
+    t.integer "type_id"
   end
 
-  add_index "oauth_access_tokens", ["refresh_token"], name: "index_oauth_access_tokens_on_refresh_token", unique: true, using: :btree
-  add_index "oauth_access_tokens", ["resource_owner_id"], name: "index_oauth_access_tokens_on_resource_owner_id", using: :btree
-  add_index "oauth_access_tokens", ["token"], name: "index_oauth_access_tokens_on_token", unique: true, using: :btree
+  add_index "styles", ["name"], name: "index_styles_on_name", using: :btree
 
-  create_table "oauth_applications", force: true do |t|
-    t.string   "name",         null: false
-    t.string   "uid",          null: false
-    t.string   "secret",       null: false
-    t.text     "redirect_uri", null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "types", force: true do |t|
+    t.string "name", null: false
   end
 
-  add_index "oauth_applications", ["uid"], name: "index_oauth_applications_on_uid", unique: true, using: :btree
-
-  create_table "user2s", force: true do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "user2s", ["email"], name: "index_user2s_on_email", unique: true, using: :btree
-  add_index "user2s", ["reset_password_token"], name: "index_user2s_on_reset_password_token", unique: true, using: :btree
+  add_index "types", ["name"], name: "index_types_on_name", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "name",            null: false
@@ -94,5 +87,10 @@ ActiveRecord::Schema.define(version: 20140510003753) do
 
   add_index "users", ["city_id"], name: "index_users_on_city_id", using: :btree
   add_index "users", ["email"], name: "index_users_on_email", using: :btree
+
+  create_table "vehicles", force: true do |t|
+    t.integer "model_id"
+    t.integer "style_id"
+  end
 
 end

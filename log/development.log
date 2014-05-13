@@ -25434,3 +25434,2510 @@ Processing by API::V1::UsersController#get as JSON
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 35 LIMIT 1[0m
   [1m[35mCity Load (0.3ms)[0m  SELECT `cities`.* FROM `cities` WHERE `cities`.`id` = 1 LIMIT 1
 Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/show" for 127.0.0.1 at 2014-05-09 22:09:05 -0400
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 34 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 46ms (Views: 7.1ms | ActiveRecord: 19.8ms)
+
+
+Started GET "/users/show" for 127.0.0.1 at 2014-05-09 22:09:07 -0400
+Processing by UsersController#show as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 34 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/logout" for 127.0.0.1 at 2014-05-09 22:09:07 -0400
+Processing by UsersController#logout as HTML
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 22:09:07 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2014-05-09 22:09:09 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2014-05-09 22:09:40 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-09 22:09:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-09 22:09:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-09 22:09:40 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-09 22:09:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-09 22:09:40 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-09 22:09:40 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-09 22:09:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-09 22:09:40 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2014-05-09 22:09:42 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/authenticate" for 127.0.0.1 at 2014-05-09 22:09:46 -0400
+Processing by UsersController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "email"=>"puca2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Create Section"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'puca2@gmail.com' LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 98ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 22:09:46 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-09 22:09:46 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-09 22:09:46 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-09 22:09:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-09 22:09:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-09 22:09:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-09 22:09:47 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-09 22:09:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-09 22:09:47 -0400
+
+
+Started GET "/users/show" for 127.0.0.1 at 2014-05-09 22:09:48 -0400
+Processing by UsersController#show as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 34 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 22:09:50 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for 127.0.0.1 at 2014-05-09 22:13:38 -0400
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 34 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/show" for 127.0.0.1 at 2014-05-09 22:16:10 -0400
+Processing by UsersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 34 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 19.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-09 22:16:10 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-09 22:16:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-09 22:16:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-09 22:16:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-09 22:16:10 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-09 22:16:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-09 22:16:10 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-09 22:16:10 -0400
+
+
+Started GET "/users/delete" for 127.0.0.1 at 2014-05-09 22:16:15 -0400
+Processing by UsersController#delete as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 34 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (11.2ms)[0m  [1mDELETE FROM `users` WHERE `users`.`id` = 34[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 19ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 22:16:15 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2014-05-09 22:16:16 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/authenticate" for 127.0.0.1 at 2014-05-09 22:16:19 -0400
+Processing by UsersController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "email"=>"puca2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Create Section"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'puca2@gmail.com' LIMIT 1[0m
+  Rendered users/login.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-09 22:16:20 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-09 22:16:20 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-09 22:16:20 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-09 22:16:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-09 22:16:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-09 22:16:20 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-09 22:16:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-09 22:16:20 -0400
+
+
+Started POST "/users/authenticate" for 127.0.0.1 at 2014-05-09 22:16:27 -0400
+Processing by UsersController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "email"=>"puca3@gmail.com", "password"=>"[FILTERED]", "commit"=>"Create Section"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'puca3@gmail.com' LIMIT 1
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 103ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 22:16:28 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-09 22:16:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-09 22:16:28 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-09 22:16:28 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-09 22:16:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-09 22:16:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-09 22:16:28 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-09 22:16:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-09 22:16:28 -0400
+
+
+Started GET "/users/show" for 127.0.0.1 at 2014-05-09 22:16:29 -0400
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 35 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (29.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateBrands (20140510202344)
+  [1m[35m (61.6ms)[0m  CREATE TABLE `brands` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (23.0ms)[0m  [1mCREATE INDEX `index_brands_on_name` ON `brands` (`name`) [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (6.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140510202344')[0m
+  [1m[35m (6.0ms)[0m  COMMIT
+Migrating to CreateModels (20140510202429)
+  [1m[36m (11.4ms)[0m  [1mCREATE TABLE `models` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `brand_id` int(11)) ENGINE=InnoDB[0m
+  [1m[35m (14.4ms)[0m  CREATE INDEX `index_models_on_name` ON `models` (`name`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140510202429')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mBrand Load (0.2ms)[0m  [1mSELECT `brands`.* FROM `brands`[0m
+  [1m[35mModel Load (0.4ms)[0m  SELECT `models`.* FROM `models`
+  [1m[36mBrand Load (0.4ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (0.4ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`brand_id` = 2
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from irb_binding at (irb):6)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateTypes (20140510203400)
+  [1m[35m (14.5ms)[0m  CREATE TABLE `types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateTypes (20140510203400)
+  [1m[35m (0.8ms)[0m  CREATE TABLE `types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL) ENGINE=InnoDB
+Mysql2::Error: Table 'types' already exists: CREATE TABLE `types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateTypes (20140510203400)
+  [1m[35m (0.4ms)[0m  CREATE TABLE `types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL) ENGINE=InnoDB
+Mysql2::Error: Table 'types' already exists: CREATE TABLE `types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateTypes (20140510203400)
+  [1m[35m (0.4ms)[0m  CREATE TABLE `types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL) ENGINE=InnoDB
+Mysql2::Error: Table 'types' already exists: CREATE TABLE `types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateTypes (20140510203400)
+  [1m[35m (0.4ms)[0m  CREATE TABLE `types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL) ENGINE=InnoDB
+Mysql2::Error: Table 'types' already exists: CREATE TABLE `types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateTypes (20140510203400)
+  [1m[35m (30.3ms)[0m  CREATE TABLE `types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (11.3ms)[0m  [1mCREATE INDEX `index_types_on_name` ON `types` (`name`) [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140510203400')[0m
+  [1m[35m (6.2ms)[0m  COMMIT
+Migrating to CreateStyles (20140510203447)
+  [1m[36m (16.8ms)[0m  [1mCREATE TABLE `styles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `photo_path` varchar(255) NOT NULL, `description` varchar(255) NOT NULL, `type_id` int(11)) ENGINE=InnoDB[0m
+  [1m[35m (9.8ms)[0m  CREATE INDEX `index_styles_on_name` ON `styles` (`name`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140510203447')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateVehicles (20140510205812)
+  [1m[35m (32.9ms)[0m  CREATE TABLE `vehicles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `model_id` int(11), `style_id` int(11)) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140510205812')
+  [1m[36m (11.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mVehicle Load (0.3ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mVehicle Load (0.3ms)[0m  SELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`id` = 1 LIMIT 1
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mStyle Load (0.4ms)[0m  SELECT `styles`.* FROM `styles` WHERE `styles`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (0.4ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateAds (20140510210345)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateAds (20140510210345)
+  [1m[35m (27.5ms)[0m  CREATE TABLE `ads` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `price` int(11), `year` int(11), `visit_count` int(11), `gears` int(11), `engine_size` int(11), `cylinders` int(11), `strokes` tinyint(1), `paper_status` varchar(255), `color` varchar(255), `transmission_type` varchar(255), `description` varchar(255), `vehicle_id` int(11), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (11.4ms)[0m  [1mCREATE INDEX `index_ads_on_user_id` ON `ads` (`user_id`) [0m
+  [1m[35m (16.4ms)[0m  CREATE INDEX `index_ads_on_vehicle_id` ON `ads` (`vehicle_id`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140510210345')
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddTitleToAds (20140510212142)
+  [1m[35m (41.4ms)[0m  ALTER TABLE `ads` ADD `title` varchar(255)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140510212142')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.8ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 17:51:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by AdsController#new as HTML
+  Rendered ads/new.html.erb within layouts/application (16.7ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    28:         <div class="form-group ">
+    29:             <%= f.label(:city_id, "Ciudad", class:"control-label col-sm-1") %>
+    30:             <div class="col-sm-3">
+    31:                  <%= f.select(:city_id, @cities.map {|c| [c.name, c.id]}) %>
+    32:             </div>
+    33: 
+    34:         </div>
+  app/views/ads/new.html.erb:31:in `block in _app_views_ads_new_html_erb___2005486460842391519_2164832520'
+  app/views/ads/new.html.erb:4:in `_app_views_ads_new_html_erb___2005486460842391519_2164832520'
+
+
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 17:51:32 -0400
+Processing by AdsController#new as HTML
+  [1m[35mCity Load (0.5ms)[0m  SELECT `cities`.* FROM `cities`
+  Rendered ads/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 452ms (Views: 425.7ms | ActiveRecord: 20.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 17:51:33 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 17:51:33 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 17:51:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 17:51:33 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 17:51:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 17:51:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 17:51:33 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 17:51:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 17:51:33 -0400
+
+
+Started GET "/users/logout" for 127.0.0.1 at 2014-05-10 17:51:56 -0400
+Processing by UsersController#logout as HTML
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-10 17:51:56 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 17:52:00 -0400
+Processing by AdsController#new as HTML
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT `cities`.* FROM `cities`[0m
+  Rendered ads/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 17:52:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 17:52:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 17:52:00 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 17:52:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 17:52:00 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 17:52:00 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 17:52:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 17:52:00 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 17:56:03 -0400
+Processing by AdsController#new as HTML
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant AdsController::Vechicle):
+  app/controllers/ads_controller.rb:18:in `new'
+
+
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.0ms)
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 17:56:34 -0400
+Processing by AdsController#new as HTML
+  Rendered ads/new.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    28:         <div class="form-group ">
+    29:             <%= f.label(:city_id, "Ciudad", class:"control-label col-sm-1") %>
+    30:             <div class="col-sm-3">
+    31:                  <%= f.select(:city_id, @cities.map {|c| [c.model, c.id]}) %>
+    32:             </div>
+    33: 
+    34:         </div>
+  app/views/ads/new.html.erb:31:in `block in _app_views_ads_new_html_erb___2005486460842391519_2173913800'
+  app/views/ads/new.html.erb:4:in `_app_views_ads_new_html_erb___2005486460842391519_2173913800'
+
+
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.0ms)
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 17:56:53 -0400
+Processing by AdsController#new as HTML
+  [1m[35mVehicle Load (0.4ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (0.4ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mModel Load (0.3ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  Rendered ads/new.html.erb within layouts/application (56.2ms)
+Completed 200 OK in 62ms (Views: 37.4ms | ActiveRecord: 24.5ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 17:56:53 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 17:56:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 17:56:53 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 17:56:53 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 17:56:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 17:56:53 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 17:56:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 17:56:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 17:56:53 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 17:57:07 -0400
+Processing by AdsController#new as HTML
+  [1m[36mVehicle Load (0.3ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (0.4ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  Rendered ads/new.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 17:57:07 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 17:57:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 17:57:07 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 17:57:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 17:57:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 17:57:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 17:57:07 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 17:57:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 17:57:07 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 17:57:47 -0400
+Processing by AdsController#new as HTML
+  [1m[35mVehicle Load (0.3ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.4ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.5ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 48ms (Views: 33.0ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 17:57:47 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 17:57:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 17:57:47 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 17:57:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 17:57:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 17:57:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 17:57:47 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 17:57:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 17:57:47 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 17:57:58 -0400
+Processing by AdsController#new as HTML
+  [1m[36mVehicle Load (0.3ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (0.3ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (0.4ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (0.3ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 17:57:58 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 17:57:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 17:57:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 17:57:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 17:57:58 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 17:57:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 17:57:58 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 17:57:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 17:57:58 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 17:58:52 -0400
+Processing by AdsController#new as HTML
+  [1m[35mVehicle Load (0.3ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (0.4ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.3ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.2ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 17:58:52 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 17:58:52 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 17:58:52 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 17:58:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 17:58:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 17:58:52 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 17:58:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 17:58:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 17:58:52 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 17:59:57 -0400
+Processing by AdsController#new as HTML
+  [1m[36mVehicle Load (0.4ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (0.2ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (0.3ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (0.3ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 17:59:57 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 17:59:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 17:59:57 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 17:59:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 17:59:57 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 17:59:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 17:59:57 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 17:59:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 17:59:57 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to ChangeTypeAds (20140510220508)
+  [1m[35m (44.0ms)[0m  ALTER TABLE `ads` CHANGE `strokes` `strokes` int DEFAULT NULL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140510220508')
+  [1m[36m (18.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 18:07:22 -0400
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Processing by AdsController#new as HTML
+  [1m[36mVehicle Load (0.3ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (0.3ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (0.3ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (0.4ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 105ms (Views: 42.4ms | ActiveRecord: 58.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 18:07:22 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 18:07:22 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 18:07:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 18:07:22 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 18:07:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 18:07:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 18:07:22 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 18:07:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 18:07:22 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 18:08:04 -0400
+Processing by AdsController#new as HTML
+  [1m[35mVehicle Load (0.4ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (0.4ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.3ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 18:08:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 18:08:04 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 18:08:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 18:08:04 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 18:08:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 18:08:04 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 18:08:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 18:08:04 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 18:08:04 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 18:09:43 -0400
+Processing by AdsController#new as HTML
+  [1m[36mVehicle Load (0.3ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (0.3ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (0.4ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (0.4ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 18:09:43 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 18:09:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 18:09:43 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 18:09:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 18:09:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 18:09:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 18:09:44 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 18:09:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 18:09:44 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 18:09:54 -0400
+Processing by AdsController#new as HTML
+  [1m[35mVehicle Load (0.3ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (0.4ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.6ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 18:09:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 18:09:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 18:09:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 18:09:54 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 18:09:54 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 18:09:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 18:09:54 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 18:09:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 18:09:54 -0400
+
+
+Started POST "/ads/create" for 127.0.0.1 at 2014-05-10 19:16:03 -0400
+Processing by AdsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "ad"=>{"price"=>"", "color"=>"", "engine_size"=>"", "year"=>"2002", "paper_status"=>"OK", "transmission_type"=>"Manual", "gears"=>"1", "cylinders"=>"1", "strokes"=>"2", "vehicle_id"=>"1"}, "commit"=>"Create Section"}
+Completed 500 Internal Server Error in 47ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/ads_controller.rb:9:in `create'
+
+
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.6ms)
+
+
+Started POST "/ads/create" for 127.0.0.1 at 2014-05-10 19:17:33 -0400
+Processing by AdsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "ad"=>{"price"=>"", "color"=>"", "engine_size"=>"", "year"=>"2002", "paper_status"=>"OK", "transmission_type"=>"Manual", "gears"=>"1", "cylinders"=>"1", "strokes"=>"2", "vehicle_id"=>"1"}, "commit"=>"Create Section"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered ads/new.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 87ms
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    70:       <div class="form-group ">
+    71:         <%= f.label(:vehicle_id, "Modelo", class:"control-label col-sm-1") %>
+    72:         <div class="col-sm-3">
+    73:              <%= f.select(:vehicle_id, @vehicles.map {|c| [c.model.brand.name+","+c.model.name, c.id]}) %>
+    74:       </div>
+    75: 
+    76:     </div>
+  app/views/ads/new.html.erb:73:in `block in _app_views_ads_new_html_erb___2005486460842391519_2163829380'
+  app/views/ads/new.html.erb:4:in `_app_views_ads_new_html_erb___2005486460842391519_2163829380'
+  app/controllers/ads_controller.rb:13:in `create'
+
+
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.0ms)
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 19:17:54 -0400
+Processing by AdsController#new as HTML
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (6.5ms)[0m  SELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1
+  [1m[36mVehicle Load (0.4ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (0.3ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (0.3ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (0.4ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 99ms (Views: 29.3ms | ActiveRecord: 49.6ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:17:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:17:54 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:17:54 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:17:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:17:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:17:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:17:54 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:17:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:17:54 -0400
+
+
+Started POST "/ads/create" for 127.0.0.1 at 2014-05-10 19:17:55 -0400
+Processing by AdsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "ad"=>{"price"=>"", "color"=>"", "engine_size"=>"", "year"=>"1990", "paper_status"=>"OK", "transmission_type"=>"Automatica", "gears"=>"1", "cylinders"=>"1", "strokes"=>"2", "vehicle_id"=>"1"}, "commit"=>"Create Section"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mVehicle Load (0.2ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.3ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 60ms (Views: 15.0ms | ActiveRecord: 20.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:17:55 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:17:55 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:17:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:17:55 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:17:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:17:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:17:55 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:17:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:17:55 -0400
+
+
+Started POST "/ads/create" for 127.0.0.1 at 2014-05-10 19:20:26 -0400
+Processing by AdsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "ad"=>{"price"=>"", "color"=>"", "engine_size"=>"", "year"=>"1990", "paper_status"=>"OK", "transmission_type"=>"Automatica", "gears"=>"1", "cylinders"=>"1", "strokes"=>"2", "vehicle_id"=>"1"}, "commit"=>"Create Section"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mVehicle Load (0.3ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (0.4ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (0.3ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (1.1ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (101.5ms)
+Completed 200 OK in 175ms (Views: 49.6ms | ActiveRecord: 88.5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:20:26 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:20:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:20:26 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:20:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:20:26 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:20:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:20:26 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:20:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:20:26 -0400
+
+
+Started POST "/ads/create" for 127.0.0.1 at 2014-05-10 19:20:56 -0400
+Processing by AdsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "ad"=>{"price"=>"12000", "color"=>"rojo", "engine_size"=>"1000", "year"=>"1990", "paper_status"=>"OK", "transmission_type"=>"Automatica", "gears"=>"1", "cylinders"=>"1", "strokes"=>"2", "vehicle_id"=>"1"}, "commit"=>"Create Section"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mVehicle Load (0.3ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.3ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 27ms (Views: 21.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:20:56 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:20:56 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:20:56 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:20:56 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:20:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:20:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:20:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:20:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:20:56 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 19:21:53 -0400
+Processing by AdsController#new as HTML
+  [1m[36mModel Load (0.4ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.3ms)[0m  SELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1
+  [1m[36mVehicle Load (0.4ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (0.4ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (0.2ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (0.2ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 25ms (Views: 20.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:21:53 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:21:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:21:53 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:21:53 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:21:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:21:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:21:53 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:21:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:21:53 -0400
+
+
+Started POST "/ads/create" for 127.0.0.1 at 2014-05-10 19:22:12 -0400
+Processing by AdsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "ad"=>{"title"=>"Yamha R1", "price"=>"porche", "color"=>"Rojo", "engine_size"=>"1200", "year"=>"1990", "paper_status"=>"OK", "transmission_type"=>"Automatica", "gears"=>"1", "cylinders"=>"1", "strokes"=>"2", "vehicle_id"=>"1"}, "commit"=>"Create Section"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35mVehicle Load (0.3ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (0.4ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.5ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.5ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 28ms (Views: 19.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:22:13 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:22:13 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:22:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:22:13 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:22:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:22:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:22:13 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:22:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:22:13 -0400
+
+
+Started POST "/ads/create" for 127.0.0.1 at 2014-05-10 19:22:22 -0400
+Processing by AdsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "ad"=>{"title"=>"Yamha R1", "price"=>"porche", "color"=>"Rojo", "engine_size"=>"1200", "year"=>"1990", "paper_status"=>"OK", "transmission_type"=>"Automatica", "gears"=>"1", "cylinders"=>"1", "strokes"=>"2", "vehicle_id"=>"1"}, "commit"=>"Create Section"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mVehicle Load (0.3ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (0.3ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (0.3ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (0.3ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 29ms (Views: 20.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:22:22 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:22:22 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:22:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:22:22 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:22:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:22:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:22:22 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:22:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:22:22 -0400
+
+
+Started POST "/ads/create" for 127.0.0.1 at 2014-05-10 19:23:09 -0400
+Processing by AdsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "ad"=>{"title"=>"Yamha R1", "price"=>"porche", "color"=>"Rojo", "engine_size"=>"1200", "year"=>"1990", "paper_status"=>"OK", "transmission_type"=>"Automatica", "gears"=>"1", "cylinders"=>"1", "strokes"=>"2", "vehicle_id"=>"1"}, "commit"=>"Create Section"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mVehicle Load (0.4ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (0.4ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.2ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.2ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 24ms (Views: 19.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:23:09 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:23:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:23:09 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:23:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:23:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:23:09 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:23:09 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:23:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:23:09 -0400
+
+
+Started POST "/ads/create" for 127.0.0.1 at 2014-05-10 19:23:15 -0400
+Processing by AdsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "ad"=>{"title"=>"Yamha R1", "price"=>"12000", "description"=>"porche\r\n", "color"=>"Rojo", "engine_size"=>"1200", "year"=>"1990", "paper_status"=>"OK", "transmission_type"=>"Automatica", "gears"=>"1", "cylinders"=>"1", "strokes"=>"2", "vehicle_id"=>"1"}, "commit"=>"Create Section"}
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (41.6ms)[0m  INSERT INTO `ads` (`color`, `created_at`, `cylinders`, `description`, `engine_size`, `gears`, `paper_status`, `price`, `strokes`, `title`, `transmission_type`, `updated_at`, `vehicle_id`, `year`) VALUES ('Rojo', '2014-05-10 23:23:15', 1, 'porche\r\n', 1200, 1, 'OK', 12000, 2, 'Yamha R1', 'Automatica', '2014-05-10 23:23:15', 1, 1990)
+  [1m[36m (12.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/ads/show
+Completed 302 Found in 70ms (ActiveRecord: 54.6ms)
+
+
+Started GET "/ads/show" for 127.0.0.1 at 2014-05-10 19:23:15 -0400
+Processing by AdsController#show as HTML
+  Rendered ads/show.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    10: 
+    11:       </tr>
+    12:           <tr>
+    13:             <td><%= @ad.id %> </td>
+    14:             <td><%= @ad.user.name %></td>
+    15:             <td><%= @ad.price %> </td>
+    16:             <td><%= @ad.strokes %></td>
+  app/views/ads/show.html.erb:13:in `_app_views_ads_show_html_erb___392920586811812925_2173897920'
+
+
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.2ms)
+
+
+Started GET "/ads/show" for 127.0.0.1 at 2014-05-10 19:24:15 -0400
+Processing by AdsController#show as HTML
+  [1m[35mAd Load (0.5ms)[0m  SELECT `ads`.* FROM `ads` WHERE `ads`.`id` = 1 LIMIT 1
+  Rendered ads/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 69ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    11:       </tr>
+    12:           <tr>
+    13:             <td><%= @ad.id %> </td>
+    14:             <td><%= @ad.user.name %></td>
+    15:             <td><%= @ad.price %> </td>
+    16:             <td><%= @ad.strokes %></td>
+    17:             <td><%= @ad.transmission_type %> </td>
+  app/views/ads/show.html.erb:14:in `_app_views_ads_show_html_erb___392920586811812925_2173897920'
+
+
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.4ms)
+
+
+Started GET "/ads/show" for 127.0.0.1 at 2014-05-10 19:24:19 -0400
+Processing by AdsController#show as HTML
+  [1m[36mAd Load (0.3ms)[0m  [1mSELECT `ads`.* FROM `ads` WHERE `ads`.`id` = 1 LIMIT 1[0m
+  Rendered ads/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    11:       </tr>
+    12:           <tr>
+    13:             <td><%= @ad.id %> </td>
+    14:             <td><%= @ad.user.name %></td>
+    15:             <td><%= @ad.price %> </td>
+    16:             <td><%= @ad.strokes %></td>
+    17:             <td><%= @ad.transmission_type %> </td>
+  app/views/ads/show.html.erb:14:in `_app_views_ads_show_html_erb___392920586811812925_2173897920'
+
+
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.4ms)
+
+
+Started GET "/ads/show" for 127.0.0.1 at 2014-05-10 19:24:35 -0400
+Processing by AdsController#show as HTML
+  [1m[35mAd Load (0.3ms)[0m  SELECT `ads`.* FROM `ads` WHERE `ads`.`id` = 1 LIMIT 1
+  Rendered ads/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:24:35 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:24:35 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:24:35 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:24:35 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:24:35 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:24:35 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:24:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:24:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:24:35 -0400
+
+
+Started GET "/ads/show" for 127.0.0.1 at 2014-05-10 19:25:13 -0400
+Processing by AdsController#show as HTML
+  [1m[36mAd Load (0.3ms)[0m  [1mSELECT `ads`.* FROM `ads` WHERE `ads`.`id` = 1 LIMIT 1[0m
+  Rendered ads/show.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    11:       </tr>
+    12:           <tr>
+    13:             <td><%= @ad.id %> </td>
+    14:             <td><%= @ad.user.id %></td>
+    15:             <td><%= @ad.price %> </td>
+    16:             <td><%= @ad.strokes %></td>
+    17:             <td><%= @ad.transmission_type %> </td>
+  app/views/ads/show.html.erb:14:in `_app_views_ads_show_html_erb___392920586811812925_2186800340'
+
+
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.8ms)
+
+
+Started GET "/ads/show" for 127.0.0.1 at 2014-05-10 19:25:36 -0400
+Processing by AdsController#show as HTML
+  [1m[35mAd Load (0.3ms)[0m  SELECT `ads`.* FROM `ads` WHERE `ads`.`id` = 1 LIMIT 1
+  Rendered ads/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:25:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:25:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:25:36 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:25:36 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:25:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:25:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:25:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:25:36 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:25:36 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 19:27:53 -0400
+Processing by AdsController#new as HTML
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.4ms)[0m  SELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1
+  [1m[36mVehicle Load (0.3ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (0.4ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (0.4ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (0.3ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 97ms (Views: 25.1ms | ActiveRecord: 49.8ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:27:53 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:27:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:27:53 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:27:53 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:27:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:27:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:27:53 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:27:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:27:53 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2014-05-10 19:27:56 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/authenticate" for 127.0.0.1 at 2014-05-10 19:28:38 -0400
+Processing by UsersController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "email"=>"puca2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Create Section"}
+  [1m[35mUser Load (2.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'puca2@gmail.com' LIMIT 1
+  Rendered users/login.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 39ms (Views: 7.0ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:28:38 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:28:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:28:38 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:28:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:28:38 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:28:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:28:38 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:28:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:28:38 -0400
+
+
+Started POST "/users/authenticate" for 127.0.0.1 at 2014-05-10 19:28:42 -0400
+Processing by UsersController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "email"=>"puca3@gmail.com", "password"=>"[FILTERED]", "commit"=>"Create Section"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'puca3@gmail.com' LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 105ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-10 19:28:42 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:28:42 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:28:42 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:28:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:28:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:28:42 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:28:42 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:28:42 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:28:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:28:42 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 19:28:46 -0400
+Processing by AdsController#new as HTML
+  [1m[35mModel Load (1.0ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mVehicle Load (0.4ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.4ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (0.4ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.4ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 23ms (Views: 17.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:28:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:28:46 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:28:46 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:28:46 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:28:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:28:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:28:46 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:28:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:28:46 -0400
+
+
+Started POST "/ads/create?user_id=35" for 127.0.0.1 at 2014-05-10 19:29:07 -0400
+Processing by AdsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "ad"=>{"title"=>"Easy", "price"=>"12000", "description"=>"porche", "color"=>"Rojo", "engine_size"=>"1200", "year"=>"1990", "paper_status"=>"OK", "transmission_type"=>"Automatica", "gears"=>"1", "cylinders"=>"1", "strokes"=>"2", "vehicle_id"=>"1"}, "commit"=>"Create Section", "user_id"=>"35"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `ads` (`color`, `created_at`, `cylinders`, `description`, `engine_size`, `gears`, `paper_status`, `price`, `strokes`, `title`, `transmission_type`, `updated_at`, `vehicle_id`, `year`) VALUES ('Rojo', '2014-05-10 23:29:07', 1, 'porche', 1200, 1, 'OK', 12000, 2, 'Easy', 'Automatica', '2014-05-10 23:29:07', 1, 1990)
+  [1m[36m (16.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/ads/show
+Completed 302 Found in 25ms (ActiveRecord: 17.1ms)
+
+
+Started GET "/ads/show" for 127.0.0.1 at 2014-05-10 19:29:07 -0400
+Processing by AdsController#show as HTML
+  [1m[35mAd Load (0.4ms)[0m  SELECT `ads`.* FROM `ads` WHERE `ads`.`id` = 1 LIMIT 1
+  Rendered ads/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    11:       </tr>
+    12:           <tr>
+    13:             <td><%= @ad.id %> </td>
+    14:             <td><%= @ad.user.name %></td>
+    15:             <td><%= @ad.price %> </td>
+    16:             <td><%= @ad.strokes %></td>
+    17:             <td><%= @ad.transmission_type %> </td>
+  app/views/ads/show.html.erb:14:in `_app_views_ads_show_html_erb___392920586811812925_2186738400'
+
+
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.1ms)
+
+
+Started GET "/ads/show" for 127.0.0.1 at 2014-05-10 19:32:13 -0400
+Processing by AdsController#show as HTML
+  [1m[36mAd Load (0.4ms)[0m  [1mSELECT `ads`.* FROM `ads` WHERE `ads`.`id` = 1 LIMIT 1[0m
+  Rendered ads/show.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    11:       </tr>
+    12:           <tr>
+    13:             <td><%= @ad.id %> </td>
+    14:             <td><%= @ad.user.name %></td>
+    15:             <td><%= @ad.price %> </td>
+    16:             <td><%= @ad.strokes %></td>
+    17:             <td><%= @ad.transmission_type %> </td>
+  app/views/ads/show.html.erb:14:in `_app_views_ads_show_html_erb___392920586811812925_2186738400'
+
+
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.8ms)
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 19:32:16 -0400
+Processing by AdsController#new as HTML
+  [1m[35mModel Load (0.3ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mVehicle Load (0.3ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.3ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.3ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.2ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 23ms (Views: 19.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:32:16 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:32:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:32:16 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:32:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:32:16 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:32:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:32:16 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:32:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:32:16 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 19:32:44 -0400
+Processing by AdsController#new as HTML
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.3ms)[0m  SELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1
+  [1m[36mVehicle Load (0.3ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (0.2ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (0.3ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (0.3ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 19:32:51 -0400
+Processing by AdsController#new as HTML
+  [1m[35mModel Load (0.3ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mVehicle Load (0.2ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.3ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.2ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.2ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 20ms (Views: 15.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:32:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:32:51 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:32:51 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:32:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:32:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:32:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:32:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:32:51 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:32:51 -0400
+
+
+Started POST "/ads/create?user_id=35" for 127.0.0.1 at 2014-05-10 19:32:57 -0400
+Processing by AdsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "ad"=>{"user_id"=>"35", "title"=>"asd", "price"=>"12", "description"=>"weq", "color"=>"qw", "engine_size"=>"qwe", "year"=>"1990", "paper_status"=>"OK", "transmission_type"=>"Automatica", "gears"=>"1", "cylinders"=>"1", "strokes"=>"2", "vehicle_id"=>"1"}, "commit"=>"Create Section", "user_id"=>"35"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.9ms)[0m  ROLLBACK
+  [1m[36mVehicle Load (0.4ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (0.4ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (0.3ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (0.5ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 32ms (Views: 21.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:32:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:32:57 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:32:57 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:32:57 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:32:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:32:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:32:57 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:32:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:32:57 -0400
+
+
+Started POST "/ads/create?user_id=35" for 127.0.0.1 at 2014-05-10 19:33:02 -0400
+Processing by AdsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HZn9RRbdNAzSirAb9FauNYj/Jr/AAkKBecTvzrih/8=", "ad"=>{"user_id"=>"35", "title"=>"asd", "price"=>"12", "description"=>"weq", "color"=>"qw", "engine_size"=>"12", "year"=>"1990", "paper_status"=>"OK", "transmission_type"=>"Automatica", "gears"=>"1", "cylinders"=>"1", "strokes"=>"2", "vehicle_id"=>"1"}, "commit"=>"Create Section", "user_id"=>"35"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `ads` (`color`, `created_at`, `cylinders`, `description`, `engine_size`, `gears`, `paper_status`, `price`, `strokes`, `title`, `transmission_type`, `updated_at`, `user_id`, `vehicle_id`, `year`) VALUES ('qw', '2014-05-10 23:33:02', 1, 'weq', 12, 1, 'OK', 12, 2, 'asd', 'Automatica', '2014-05-10 23:33:02', 35, 1, 1990)[0m
+  [1m[35m (11.8ms)[0m  COMMIT
+Redirected to http://127.0.0.1:3000/ads/show
+Completed 302 Found in 19ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/ads/show" for 127.0.0.1 at 2014-05-10 19:33:02 -0400
+Processing by AdsController#show as HTML
+  [1m[36mAd Load (0.4ms)[0m  [1mSELECT `ads`.* FROM `ads` WHERE `ads`.`id` = 1 LIMIT 1[0m
+  Rendered ads/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    11:       </tr>
+    12:           <tr>
+    13:             <td><%= @ad.id %> </td>
+    14:             <td><%= @ad.user.name %></td>
+    15:             <td><%= @ad.price %> </td>
+    16:             <td><%= @ad.strokes %></td>
+    17:             <td><%= @ad.transmission_type %> </td>
+  app/views/ads/show.html.erb:14:in `_app_views_ads_show_html_erb___392920586811812925_2186738400'
+
+
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.7ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:33:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:33:07 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:33:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:33:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:33:07 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:33:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:33:07 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:33:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:33:07 -0400
+
+
+Started GET "/ads/show" for 127.0.0.1 at 2014-05-10 19:35:04 -0400
+Processing by AdsController#show as HTML
+  [1m[35mAd Load (0.3ms)[0m  SELECT `ads`.* FROM `ads` WHERE `ads`.`id` = 1 LIMIT 1
+  Rendered ads/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    11:       </tr>
+    12:           <tr>
+    13:             <td><%= @ad.id %> </td>
+    14:             <td><%= @ad.user.name %></td>
+    15:             <td><%= @ad.price %> </td>
+    16:             <td><%= @ad.strokes %></td>
+    17:             <td><%= @ad.transmission_type %> </td>
+  app/views/ads/show.html.erb:14:in `_app_views_ads_show_html_erb___392920586811812925_2186738400'
+
+
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/VincentGuerrero/.rvm/gems/ruby-2.1.1@global/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.1ms)
+
+
+Started GET "/ads/show" for 127.0.0.1 at 2014-05-10 19:35:24 -0400
+Processing by AdsController#show as HTML
+  [1m[36mAd Load (0.5ms)[0m  [1mSELECT `ads`.* FROM `ads` WHERE `ads`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 35 LIMIT 1
+  Rendered ads/show.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 93ms (Views: 30.6ms | ActiveRecord: 38.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:35:24 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:35:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:35:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:35:24 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:35:24 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:35:24 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:35:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:35:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:35:24 -0400
+
+
+Started GET "/users/show" for 127.0.0.1 at 2014-05-10 19:37:04 -0400
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 35 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ads/show" for 127.0.0.1 at 2014-05-10 19:37:12 -0400
+Processing by AdsController#show as HTML
+  [1m[35mAd Load (0.3ms)[0m  SELECT `ads`.* FROM `ads` WHERE `ads`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 35 LIMIT 1[0m
+  Rendered ads/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:37:12 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:37:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:37:12 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:37:12 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:37:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:37:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:37:12 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:37:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:37:12 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-10 19:37:14 -0400
+Processing by AdsController#new as HTML
+  [1m[35mModel Load (0.4ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mVehicle Load (0.3ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.3ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.3ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.4ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 94ms (Views: 26.6ms | ActiveRecord: 48.2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-10 19:37:14 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-10 19:37:14 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-10 19:37:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-10 19:37:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-10 19:37:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-10 19:37:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-10 19:37:14 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-10 19:37:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-10 19:37:14 -0400
+
+
+Started GET "/users/show" for 127.0.0.1 at 2014-05-10 19:43:05 -0400
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 35 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 50ms (Views: 30.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-11 12:34:54 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (23.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by AdsController#new as HTML
+  [1m[35mModel Load (8.5ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mVehicle Load (0.5ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.4ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (1.5ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.4ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.4ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (240.7ms)
+Completed 200 OK in 500ms (Views: 322.5ms | ActiveRecord: 109.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-11 12:34:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-11 12:34:56 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-11 12:34:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-11 12:34:56 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-11 12:34:56 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-11 12:34:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-11 12:34:56 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-11 12:34:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-11 12:34:56 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-11 12:35:35 -0400
+Processing by AdsController#new as HTML
+Redirected to http://127.0.0.1:3000/users/login
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2014-05-11 12:35:36 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.erb within layouts/application (415.0ms)
+Completed 200 OK in 547ms (Views: 545.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-11 12:35:36 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-11 12:35:36 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-11 12:35:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-11 12:35:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-11 12:35:36 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-11 12:35:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-11 12:35:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-11 12:35:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-11 12:35:36 -0400
+
+
+Started POST "/users/authenticate" for 127.0.0.1 at 2014-05-11 12:35:45 -0400
+Processing by UsersController#authenticate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KXcKZxa6MbDPe2BZpWCOw6B8vdh/OKhRDspqWQXFOXQ=", "email"=>"puca3@gmail.com", "password"=>"[FILTERED]", "commit"=>"Create Section"}
+  [1m[36mUser Load (17.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'puca3@gmail.com' LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 198ms (ActiveRecord: 45.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 12:35:45 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-11 12:35:45 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-11 12:35:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-11 12:35:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-11 12:35:45 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-11 12:35:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-11 12:35:45 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-11 12:35:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-11 12:35:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-11 12:35:45 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-11 12:35:59 -0400
+Processing by AdsController#new as HTML
+  [1m[35mModel Load (1.2ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mVehicle Load (0.3ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.3ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (0.4ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.3ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.4ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (46.3ms)
+Completed 200 OK in 133ms (Views: 50.5ms | ActiveRecord: 50.6ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-11 12:36:00 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-11 12:36:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-11 12:36:00 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-11 12:36:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-11 12:36:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-11 12:36:00 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-11 12:36:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-11 12:36:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-11 12:36:00 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-11 12:42:20 -0400
+Processing by AdsController#new as HTML
+  [1m[36mModel Load (0.5ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (2.9ms)[0m  SELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1
+  [1m[36mVehicle Load (3.5ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (0.7ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (0.4ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (0.6ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (52.2ms)
+Completed 200 OK in 155ms (Views: 141.9ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-11 12:42:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-11 12:42:20 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-11 12:42:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-11 12:42:20 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-11 12:42:20 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-11 12:42:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-11 12:42:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-11 12:42:20 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-11 12:42:20 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-11 13:00:26 -0400
+Processing by AdsController#new as HTML
+  [1m[35mModel Load (0.7ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mVehicle Load (0.8ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.8ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (2.7ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (1.8ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.9ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (79.9ms)
+Completed 200 OK in 227ms (Views: 138.9ms | ActiveRecord: 44.6ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-11 13:00:27 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-11 13:00:27 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-11 13:00:27 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-11 13:00:27 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-11 13:00:27 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-11 13:00:27 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-11 13:00:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-11 13:00:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-11 13:00:27 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-11 13:01:04 -0400
+Processing by AdsController#new as HTML
+  [1m[36mModel Load (2.6ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.3ms)[0m  SELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1
+  [1m[36mVehicle Load (0.4ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (1.2ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (1.6ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (0.9ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 69ms (Views: 55.7ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-11 13:01:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-11 13:01:04 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-11 13:01:04 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-11 13:01:04 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-11 13:01:04 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-11 13:01:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-11 13:01:04 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-11 13:01:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-11 13:01:04 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-11 13:01:25 -0400
+Processing by AdsController#new as HTML
+  [1m[35mModel Load (1.1ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mVehicle Load (0.5ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.4ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (2.2ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.5ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.4ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 45ms (Views: 31.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-11 13:01:25 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-11 13:01:25 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-11 13:01:25 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-11 13:01:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-11 13:01:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-11 13:01:25 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-11 13:01:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-11 13:01:25 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-11 13:01:25 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-11 13:01:41 -0400
+Processing by AdsController#new as HTML
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.6ms)[0m  SELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1
+  [1m[36mVehicle Load (1.0ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (1.1ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (1.0ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (0.3ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 56ms (Views: 38.8ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-11 13:01:41 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-11 13:01:41 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-11 13:01:41 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-11 13:01:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-11 13:01:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-11 13:01:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-11 13:01:41 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-11 13:01:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-11 13:01:41 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-11 13:02:25 -0400
+Processing by AdsController#new as HTML
+  [1m[35mModel Load (0.7ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mVehicle Load (0.3ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.7ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (1.1ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.4ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 37ms (Views: 29.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-11 13:02:25 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-11 13:02:25 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-11 13:02:25 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-11 13:02:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-11 13:02:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-11 13:02:25 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-11 13:02:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-11 13:02:25 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-11 13:02:25 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-11 13:05:09 -0400
+Processing by AdsController#new as HTML
+  [1m[36mModel Load (0.5ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.4ms)[0m  SELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1
+  [1m[36mVehicle Load (1.3ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (0.9ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (0.5ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (0.7ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (56.9ms)
+Completed 200 OK in 91ms (Views: 78.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-11 13:05:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-11 13:05:09 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-11 13:05:09 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-11 13:05:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-11 13:05:09 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-11 13:05:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-11 13:05:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-11 13:05:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-11 13:05:09 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-11 13:06:16 -0400
+Processing by AdsController#new as HTML
+  [1m[35mModel Load (11.0ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mVehicle Load (1.5ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.3ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (0.8ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.4ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.5ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (48.5ms)
+Completed 200 OK in 95ms (Views: 71.8ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-11 13:06:16 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-11 13:06:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-11 13:06:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-11 13:06:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-11 13:06:16 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-11 13:06:16 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-11 13:06:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-11 13:06:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-11 13:06:16 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-11 13:06:42 -0400
+Processing by AdsController#new as HTML
+  [1m[36mModel Load (0.4ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.2ms)[0m  SELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1
+  [1m[36mVehicle Load (0.3ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles`[0m
+  [1m[35mModel Load (0.9ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mBrand Load (2.2ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m
+  [1m[35mModel Load (0.9ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 50ms (Views: 43.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-11 13:06:43 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-11 13:06:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-11 13:06:43 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-11 13:06:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-11 13:06:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-11 13:06:43 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-11 13:06:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-11 13:06:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-11 13:06:43 -0400
+
+
+Started GET "/ads/new" for 127.0.0.1 at 2014-05-11 13:07:33 -0400
+Processing by AdsController#new as HTML
+  [1m[35mModel Load (2.4ms)[0m  SELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1
+  [1m[36mVehicle Load (2.2ms)[0m  [1mSELECT `vehicles`.* FROM `vehicles` WHERE `vehicles`.`model_id` = 1 LIMIT 1[0m
+  [1m[35mVehicle Load (0.4ms)[0m  SELECT `vehicles`.* FROM `vehicles`
+  [1m[36mModel Load (1.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 1 LIMIT 1[0m
+  [1m[35mBrand Load (0.6ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT `models`.* FROM `models` WHERE `models`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT `brands`.* FROM `brands` WHERE `brands`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered ads/new.html.erb within layouts/application (47.2ms)
+Completed 200 OK in 98ms (Views: 84.2ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-11 13:07:33 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-11 13:07:33 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-11 13:07:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-11 13:07:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-11 13:07:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-11 13:07:33 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-11 13:07:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-11 13:07:33 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-11 13:07:33 -0400

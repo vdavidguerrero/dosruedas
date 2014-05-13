@@ -86,8 +86,17 @@ class UsersController < ApplicationController
     end
   end
 
-  private
+  #Borrar usuario
+  #Borra el usuario que está en sessión
+  def delete
+    User.find(session[:user_id]).destroy
+    session[:user_id] = nil
+    redirect_to controller: "users", action: "index"
 
+  end
+
+
+  private
     def user_params
       params.require(:user).permit(:name, :last_name, :email, :address, :password, :password_confirmation, :cellphone, :city_id, :phone)
     end

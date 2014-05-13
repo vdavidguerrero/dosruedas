@@ -14,3 +14,33 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function()
+{
+        var marca = $("#marca");
+        $("#listaMarca li ").on("click", function () {
+            var selecion = $(this).text();
+            marca.text(selecion);
+            $("#laMarca").attr('value', selecion);
+
+            $.ajax({
+                type: "GET",
+                url: "/ad_controller/showAdModels/"+selecion,
+                success: function(result)
+                {
+                    $("#listaModelo").html(result);
+                }
+            });
+
+        });
+
+        var modelo = $("#modelo");
+        $("#listaModelo ").on("click","li",function () {
+            var selecion =  $(this).text();
+            modelo.text(selecion);
+            $("#elModelo").attr('value', selecion);
+        });
+
+
+
+});

@@ -1,6 +1,9 @@
 class User < ActiveRecord::Base
   belongs_to :city
+  has_many :ads
+
   has_secure_password
+
 
   before_create :set_auth_token
 
