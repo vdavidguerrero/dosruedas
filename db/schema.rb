@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140510220508) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "ads", force: true do |t|
     t.integer  "price"
     t.integer  "year"
@@ -20,7 +23,6 @@ ActiveRecord::Schema.define(version: 20140510220508) do
     t.integer  "gears"
     t.integer  "engine_size"
     t.integer  "cylinders"
-    t.integer  "strokes"
     t.string   "paper_status"
     t.string   "color"
     t.string   "transmission_type"
@@ -30,6 +32,7 @@ ActiveRecord::Schema.define(version: 20140510220508) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
+    t.integer  "strokes"
   end
 
   add_index "ads", ["user_id"], name: "index_ads_on_user_id", using: :btree

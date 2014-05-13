@@ -1,5 +1,6 @@
 class ChangeTypeAds < ActiveRecord::Migration
   def change
-    change_column :ads, :strokes   , :int
+    remove_column :ads, :strokes
+    add_column :ads, :strokes, :integer
   end
 end

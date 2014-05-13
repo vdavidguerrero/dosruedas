@@ -8,32 +8,29 @@
 #
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
+#development:
+#  adapter: mysql2
+#  encoding: utf8
+#  database: principalDataBase
+#  pool: 5
+#  username: root
+#  password: ksado132ipcopy45
+#  socket: /tmp/mysql.sock
+
 development:
-  adapter: mysql2
-  encoding: utf8
-  database: principalDataBase
+  adapter: postgresql
+  encoding: unicode
   pool: 5
-  username: root
-  password: ksado132ipcopy45
-  socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  adapter: mysql2
-  encoding: utf8
-  database: ventacombustion_test
+  adapter: postgresql
+  encoding: unicode
   pool: 5
-  username: root
-  password: ksado132ipcopy45
-  socket: /tmp/mysql.sock
 
 production:
-  adapter: mysql2
-  encoding: utf8
-  database: ventacombustion_production
-  pool: 5
-  username: root
-  password: ksado132ipcopy45
-  socket: /tmp/mysql.sock
+   adapter: postgresql
+   encoding: unicode
+   pool: 5
