@@ -1,7 +1,12 @@
 source 'https://rubygems.org'
 
+
+ruby "2.1.1"
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
+
+
 
 # Use mysql as the database for Active Record
 gem 'mysql2'
@@ -51,4 +56,4 @@ gem 'pg'
 
 gem 'twitter-bootstrap-rails'
 
-gem 'rails_12factor', group: :production
+gem 'rails_12factor'
