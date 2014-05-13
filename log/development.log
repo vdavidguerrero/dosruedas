@@ -28769,3 +28769,69 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-13 16:09:06 -0400
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 16:09:06 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 16:09:54 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-13 16:09:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-13 16:09:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-13 16:09:54 -0400
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-13 16:09:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-13 16:09:54 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-13 16:09:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-13 16:09:54 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-13 16:09:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 16:09:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 16:11:35 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ads.css?body=1" for 127.0.0.1 at 2014-05-13 16:11:35 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-13 16:11:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-13 16:11:35 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-13 16:11:35 -0400
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-05-13 16:11:35 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-05-13 16:11:35 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-13 16:11:35 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-05-13 16:11:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 16:11:35 -0400
