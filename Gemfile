@@ -48,3 +48,5 @@ gem 'devise'
 gem 'doorkeeper'
 gem 'passenger'
 gem 'pg'
+
+gem 'twitter-bootstrap-rails'
