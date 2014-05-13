@@ -1,7 +1,8 @@
 # Documentación.
 
-## Métodos del webservice
+## WebService : http://stormy-oasis-6068.herokuapp.com
 
+## Métodos
     Los metodos son accedidos via un request GET, con un contet-type JSON.
 
     los metodos marcarcados con @auth: SI, necesitan que se enviado el Token único del usuario antes
