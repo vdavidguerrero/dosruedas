@@ -16,12 +16,7 @@
       </div>
 
 
-      <div class="form-group">
-        <%= f.label(:photo1, "Imagen", class:"control-label col-sm-1") %>
-        <div class="col-sm-2">
-          <%= f.file_field(:photo1, class:"form-control") %>
-        </div>
-      </div>
+
 
         <div class="form-group">
           <%= f.label(:price, "Precio", class:"control-label col-sm-1") %>
@@ -99,8 +94,26 @@
         <div class="col-sm-2">
              <%= f.select(:vehicle_id, @vehicles.map {|c| [c.model.brand.name+","+c.model.name, c.id]}) %>
       </div>
+        </div>
 
-
+        <div class="form-group">
+          <%= f.label(:photo1, "Imagen", class:"control-label col-sm-1") %>
+          <div class="col-sm-2">
+            <%= f.file_field(:photo1, class:"form-control") %>
+          </div>
+        </div>
+      <div class="form-group">
+        <%= f.label(:photo2, "Imagen", class:"control-label col-sm-1") %>
+        <div class="col-sm-2">
+          <%= f.file_field(:photo2, class:"form-control") %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= f.label(:photo3, "Imagen", class:"control-label col-sm-1") %>
+        <div class="col-sm-2">
+          <%= f.file_field(:photo3, class:"form-control") %>
+        </div>
+      </div>
 
 
      </div>

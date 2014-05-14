@@ -1,6 +1,7 @@
 class Ad < ActiveRecord::Base
   belongs_to :vehicle
   belongs_to :user
+  has_many   :pictures
 
 
   validates :title               , presence: true,

@@ -1,0 +1,20 @@
+<div class="container">
+    <table class="table" summary="Page list">
+      <tr class="active">
+
+        <th>Anuncios</th>
+        <th>Borrar</th>
+
+
+      </tr>
+
+            <% @ads.each do |ad| %>
+          <tr>
+            <td> <%= link_to ad.title      , {controller: 'ads'  , action: 'show', id:ad.id}%></td>
+            <td> <%= link_to "Borrar"     , {controller: 'ads'  , action: 'delete', id:ad.id}%></td>
+          </tr>
+            <% end %>
+
+
+    </table>
+</div>
